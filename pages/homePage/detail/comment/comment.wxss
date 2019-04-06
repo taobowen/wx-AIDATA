@@ -1,0 +1,287 @@
+.names {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+ 
+.input_null {
+  color: #c9c9c9;
+}
+ 
+.replyAll {
+  position:absolute;
+}
+ 
+.release {
+  align-items: flex-end; /*底部对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: #f7f8f7;
+  font-size: 28rpx;
+  z-index: 999;
+}
+ 
+.replyinfo1{ 
+  display: flex;
+  justify-content: space-between; /*两端对齐*/
+  font-size: 35rpx;
+}
+.replyinfo2{ 
+  display: flex;
+  justify-content: space-between; /*两端对齐*/
+}
+ 
+.release textarea {
+  width: 550rpx;
+  min-height: 34rpx;
+  max-height: 102rpx; /*最多显示三行*/
+  border-width: 15rpx 20rpx; /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #fff;
+  line-height: 34rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+ 
+.release .text {
+  font-size: 40rpx;
+  color: #c9c9c9;
+}
+ 
+.cancel {
+  width: 240rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #000000;
+  margin: 0 3px;
+  padding: 0;
+}
+ 
+.release .submit {
+  width: 120rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #000000;
+  margin: 0 3px;
+  padding: 0;
+}
+ 
+.pro-box .info .text .delete {
+  color: #f68135;
+  border-radius: 50rpx;
+  border: 1px solid #f68135;
+  font-size: 28 rpx;
+  width: 150rpx;
+  height: 48rpx;
+  text-align: center;
+}
+ 
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* large button style */
+.large-btn{
+	background: #f68135;
+	border-radius: 50rpx;
+	border: 1px solid #f68135;
+	color: #fff;
+	height: 100rpx;
+	line-height: 100rpx;
+	margin: 0 auto;
+	width: 96%;
+	text-align: center;
+}
+.large-btn.empty{
+	background: transparent;
+	color: #f68135;
+  margin-top: 50rpx;
+}
+.large-btn.disabled{
+	border-color: #ccc;
+	background: #ccc;
+	color: #fff;
+}
+/* public style to clear default styles */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.fc{
+  float:none;
+}
+.col-gray{
+	color: #999!important;
+}
+ 
+ 
+/* the message of auction about goods & cars */
+.pro-con{
+	padding: 20rpx;
+	background: #f1f1f1;
+}
+.pro-box{
+	background: #fff;
+	padding: 20rpx;
+	box-sizing: border-box;
+	border-radius: 10rpx;
+	margin-bottom: 20rpx;
+}
+.pro-box .img{
+	display: inline-block;
+	vertical-align: top;
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10rpx;
+}
+.pro-box .box{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(98% - 80rpx);
+}
+.pro-box .shead{
+	padding-bottom: 20rpx;
+}
+.pro-box .shead .name{
+	font-size: 30rpx;
+	line-height: 40rpx;
+}
+.pro-box .shead .stxt{
+	font-size: 26rpx;
+	color: #999;
+}
+.pro-box .shead .fr{
+	padding-top: 10rpx;
+}
+.pro-box .shead .fr navigator{
+	font-size: 0;
+}
+.pro-box .shead .fr image{
+	width: 48rpx;
+	height: 48rpx;
+}
+ .pro-box .sharebtn{
+   height:48rpx;
+	 background: #f68135;
+   border-radius: 50rpx;
+   border: 1px solid #f68135;
+   color: #fff;
+   text-align: center;
+   line-height: 50rpx;
+   font-size:30rpx;
+} 
+ 
+.pro-box .addr-info{
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px dashed #ccc;
+	margin: 0 -20rpx;
+	margin-bottom: 20rpx;
+	padding-bottom: 20rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+  display: inline-block;
+}
+ 
+.pro-box .addr-info .addr-text{
+	font-size: 35rpx;
+	line-height: 40rpx;
+  width:100%;
+}
+ .pro-box .addr-info .addr-text .color1{
+  color:lightskyblue;
+  border-color: #ccc;
+  border: 1px solid lightskyblue;
+  border-radius:15px;
+  margin-right: 5px;
+  padding: 0rpx,2rpx,0rpx,2rpx;
+} 
+.pro-box .addr-info .addr-text .color2{
+  color: #f68135;
+  border-color: #ccc;
+  border: 1px solid #f68135;
+  border-radius:10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0rpx,2rpx,0rpx,2rpx;
+} 
+ 
+.pro-box .position{
+	width: 48rpx;
+	height: 48rpx;
+} 
+ 
+.pro-box .comment{
+	width: 55rpx;
+	height: 48rpx;
+} 
+ 
+.pro-box .addr{
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px dashed #ccc;
+	margin: 0 -20rpx;
+	margin-bottom: 20rpx;
+	padding-bottom: 20rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+  display: flex;
+}
+ 
+.pro-box .addr .addr-text{
+	font-size: 34rpx;
+	line-height: 40rpx;
+	max-width: 240rpx;
+	min-width:200rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pro-box .addr .addr-text .color-text{
+  color: #f68135;
+}
+.pro-box .addr .time{
+	font-size: 26rpx;
+	line-height: 36rpx;
+	text-align: center;
+}
+.pro-box .addr .line{
+	background: #ccc;
+	height: 1px;
+	margin: 6rpx -20rpx;
+	position: relative;
+}
+.pro-box .info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.pro-box .info .text{
+  vertical-align:text-top;
+	font-size: 26rpx;
+}
+.pro-box .info .text .delete{
+  color: #f68135;
+	border-radius: 50rpx;
+	border: 1px solid #f68135;
+	width: 100rpx;
+	height: 48rpx;
+	text-align: center;
+}

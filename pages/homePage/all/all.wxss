@@ -1,0 +1,67 @@
+/* pages/homePage/all/all.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.sort1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  height: 100%;
+  background-color: #eee;
+}
+.sort2{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.sort2 image{
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+}
+.centertext {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.format{
+  width: auto;
+  height: 40px;
+  padding: 20px 10px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #eee;
+  border-bottom: 1px solid #fff;
+}
+.leibie{
+  width: 50%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.tab{
+  width: 100%;
+  height: 40px;
+  padding: 20px 0px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #eee;
+  border-bottom: 1px solid #fff;
+}
+
+.tabBorer {
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #fff;
+}
+swiper{
+  width: 77%;
+}

@@ -1,0 +1,31 @@
+<!--pages/find/addquestion/addquestion.wxml-->
+<form>
+  <view class='item'>
+    <view>
+      <button class='cancel' plain='true' form-type='reset' >取消</button>
+    </view>
+    <view>
+      <button class='publish' plain='true' form-type='submit'>发布</button>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='title'>问题描述</view>
+      <textarea class='taskdescribe' name="taskdescribe" placeholder='如：为什么人工智能这么火爆？' height:200px; />
+    <view class='xian'></view>
+    <view class='title'>添加描述图片</view>
+    <view class='region' bindtap='addpicture'>
+      <block wx:if="{{pictureurl==''}}">
+        <view style='margin-top:20px;'>
+          <image src='/images/addpicture.jpg' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+      <block wx:else>
+        <view style='margin-top:20px;'>
+          <image src='{{pictureurl}}' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+    </view>
+    <view class='xian'></view>
+    <view class='title'>悬赏</view>
+  </view>  
+</form>

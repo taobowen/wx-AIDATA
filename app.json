@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/homePage/picture/picture",
+    "pages/homePage/sound/sound",
+    "pages/homePage/video/video",
+    "pages/homePage/all/all",
+    "pages/homePage/detail/detail",
+    "pages/homePage/detail/comment/comment",
+    "pages/Market/Market",
+    "pages/Market/detail/detail",
+    "pages/useCenter/useCenter",
+    "pages/useCenter/money/money",
+    "pages/useCenter/Message/Message",
+    "pages/useCenter/releasetask/releasetask",
+    "pages/useCenter/uploaddata/uploaddata",
+    "pages/useCenter/uploaddata/detail/detail",
+    "pages/useCenter/uploaddata/detail2/detail2",
+    "pages/useCenter/uploaddata/detail2/senddata/senddata",
+    "pages/loading/loading",
+    "pages/find/find",
+    "pages/find/seenews/seenews",
+    "pages/find/addquestion/addquestion"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "AI 数据平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor":"#000000",
+    "color":"#dddddd",
+    "selectedColor": "#ffffff",
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/homePage/homePage",
+      "iconPath":"images/ctask.jpg",
+      "selectedIconPath":"images/task.jpg",
+      "text": "任务"
+    },{
+      "pagePath": "pages/Market/Market",
+      "iconPath": "images/cfind.png",
+      "selectedIconPath": "images/find.png",
+      "text": "市场"
+    },{
+      "pagePath": "pages/find/find",
+      "iconPath": "images/cmarket.png",
+      "selectedIconPath": "images/market.png",
+      "text": "社区"
+    },
+    {
+      "pagePath": "pages/useCenter/useCenter",
+      "iconPath": "images/cusecenter.png",
+      "selectedIconPath": "images/usecenter.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,49 @@
+<view class='swiper_con'>
+  <scroll-view class='scroll-view_H' style="height:{{scrollHeight}}px;" scroll-y="true">
+    <view class='item' bindtap='seenews'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        AI行业动态
+      </view>
+      <text class='answer' decode="{{true}}">&nbsp;&nbsp;根据百度2017年Q4财报显示，其2017年全年营收为848亿人民币，同比增长20%，而信息流业务的增长更为亮眼，其每日分发量环比增长20%，用户使用时长增长30%。在此前的2017年Q2财报中，手机百度的日活用户实现破亿规模，信息流广告收入增长更是达到200%，而再对比2017年Q4财报，可以看出百度在2017年实现了高速增长态势。DuerOS人工智能开放计划，智研咨询数据显示，中国的语音交互的市场规模在2017年达到了100亿元的规模，并且保持着40%以上的增速。</text> 
+      <view class='information'>
+        82点赞·15评论
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        智能语义企业动态
+      </view>
+      <text class='answer' decode="{{true}}">&nbsp;&nbsp;  据美国调查公司CBInsights数据显示，2017年中国人工智能(AI)相关企业融资额已经超过美国，首次跃居全球首位。从种种迹象及数字来看，对于CV初创公司来说，他们已然遇到了最好的时代；对于中国来说，这也是一次让世界重新认识中国的机会，而包括前段时间张艺谋导演操刀的平昌冬奥会上的北京8分钟，融合了AI等技术的文化盛宴也让‘科技’进一步成为中国的又一张新名片。在接受CNN采访中，其就直截了当地给出了他的观点：中国很难在AI的发展上赶超美国，目前中国AI实力排位世界第二。</text> 
+      <view class='information'>
+        82点赞·15评论
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        AI行业融资情况
+      </view>
+      <text class='answer' decode="{{true}}">&nbsp;&nbsp;  Aurora，这家集结了谷歌无人车项目前 CTOChris Urmson，特斯拉 Autopilot 项目前负责人 Sterling Anderson 和 Uber 前自动驾驶团队高级成员 Drew Bagnell 三位业界大牛的自动驾驶新创公司一下拿到了 9000 万美元的 A 轮融资，彻底摆脱了原本的低调模式。同时，商汤科技也是全球首家参与MIT最近成立的Intelligence Quest （简称IQ）项目的公司。</text> 
+      <view class='information'>
+        82点赞·15评论
+      </view>
+    </view>
+  </scroll-view>  
+</view>

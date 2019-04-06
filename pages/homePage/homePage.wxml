@@ -1,0 +1,82 @@
+<!--pages/homePage/homePage.wxml-->
+<view class='bg'>
+  <view class='name'>数据采集任务</view>
+  <view class='search'>
+    <view><image src='/images/search.png' style='width:14px;height:14px;'></image></view>
+    <view><input type='text' placeholder='搜你想要的'/></view>
+  </view>
+</view>
+<scroll-view style='height:{{scrollHeight}}px;' scroll-y="true" class='container' bindscroll="scroll">
+  <view class='section'>
+    <swiper autoplay='true' interval='3000' duration='1000'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='nav'>
+    <button class='nav-item' type='defalt' bindtap='seepicture' data-data='{{data}}'>
+      <image src='/images/addpicture.jpg' style='width:45px;height:45px;'></image>
+      <text>
+        图片
+      </text>
+    </button>
+    <button class='nav-item' type='defalt' bindtap='seesound'  data-data='{{data}}'>
+      <image src='/images/task/sound.jpg' style='width:45px;height:45px;'></image>
+      <text>
+        音频
+      </text>
+    </button>
+    <button class='nav-item' type='defalt' bindtap='seevideo' data-data='{{data}}'> 
+      <image src='/images/task/video.jpg' style='width:45px;height:45px;'></image>
+      <text>
+        视频
+      </text>
+    </button>
+    <button class='nav-item' type='defalt' bindtap='all' data-data='{{data}}'>
+      <image src='/images/task/all.jpg' style='width:45px;height:45px;'></image>
+      <text>
+        全部
+      </text>
+    </button>
+  </view>
+  
+  <view class='navbg'>
+    <view class='nav2'>
+      <scroll-view class='scroll-view_H' scroll-y="true">
+        <view class='scroll-view_H'>
+            <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap='switchNav'>推荐</view>
+            <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap='switchNav'>方言</view>
+            <view class="{{currentTab==2?'select':'normal'}}" id="2" bindtap='switchNav'>人脸</view>
+            <view class="{{currentTab==3?'select':'normal'}}" id="3" bindtap='switchNav'>指纹</view>
+            <view class="{{currentTab==4?'select':'normal'}}" id="4" bindtap='switchNav'>车辆</view>
+            <view class="{{currentTab==5?'select':'normal'}}" id="5" bindtap='switchNav'>物体</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <swiper current='{{currentTab}}' style='height:800px;' duration="300" bindchange="bindchange">
+    <swiper-item>
+      <include src="example1.wxml"/>
+    </swiper-item>
+    <swiper-item>
+      <include src="example2.wxml"/>
+    </swiper-item>
+    <swiper-item>
+      <include src="example3.wxml"/>
+    </swiper-item>
+    <swiper-item>
+      <include src="example4.wxml"/>
+    </swiper-item>
+    <swiper-item>
+      <include src="example5.wxml"/>
+    </swiper-item>
+    <swiper-item>
+      <include src="example6.wxml"/>
+    </swiper-item>
+  </swiper>
+</scroll-view>
+
+
