@@ -1,0 +1,46 @@
+<!--pages/homePage/homePage.wxml-->
+<view class='content'>
+  <view class='bg'>
+    <view class='name'>AI 数据市场</view>
+    <view class='search'>
+      <view><image src='/images/search.png' style='width:14px;height:14px;'></image></view>
+      <view><input type='text' placeholder='搜你想要的'/></view>
+    </view>
+  </view>
+</view>
+<view class='navbg'>
+  <view class='nav'>
+    <scroll-view class='scroll-view_H' scroll-x="true">
+      <view class='scroll-view_H'>
+        <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap='switchNav'>推荐</view>    
+        <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap='switchNav'>语言</view>      
+        <view class="{{currentTab==2?'select':'normal'}}" id="2" bindtap='switchNav'>人脸</view>   
+        <view class="{{currentTab==3?'select':'normal'}}" id="3" bindtap='switchNav'>物体</view>  
+        <view class="{{currentTab==4?'select':'normal'}}" id="4" bindtap='switchNav'>指纹</view>
+        <view class="{{currentTab==5?'select':'normal'}}" id="5" bindtap='switchNav'>手势</view>   
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<swiper current='{{currentTab}}'  duration="300" bindchange="bindchange" style='height:800px;'>
+  <swiper-item>
+    <include src="example1.wxml"/>
+  </swiper-item>
+   <swiper-item>
+    语言标记
+  </swiper-item>
+   <swiper-item>
+    人脸识别
+  </swiper-item>
+   <swiper-item>
+    物体标记
+  </swiper-item>
+   <swiper-item>
+    骨骼标记
+  </swiper-item>
+   <swiper-item>
+    手势轮廓
+  </swiper-item>
+</swiper>
+
+

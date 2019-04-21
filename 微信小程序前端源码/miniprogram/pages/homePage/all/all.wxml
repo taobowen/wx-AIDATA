@@ -1,0 +1,115 @@
+<!--pages/homePage/all/all.wxml-->
+<!-- <loading hidden="{{hidden}}">
+  加载中...
+</loading> -->
+<view class='content'>
+  <view class='sort1'>
+    <view class="tab  {{currentData == 0 ? 'tabBorer' : ''}}" data-current="0" bindtap='checkCurrent'>
+        图片
+    </view>  
+    <view class="tab  {{currentData == 1 ? 'tabBorer' : ''}}" data-current="1" bindtap='checkCurrent'>
+        音频
+    </view>
+    <view class="tab  {{currentData == 2 ? 'tabBorer' : ''}}" data-current="2" bindtap='checkCurrent'>  
+        视频
+    </view>  
+    <view class="tab  {{currentData == 3 ? 'tabBorer' : ''}}" data-current="3" bindtap='checkCurrent'>  
+        其他
+    </view>  
+  </view>
+  <swiper current="{{currentData}}" style="height:600px;" duration="300" bindchange="bindchange">
+    <swiper-item>
+      <view class='sort2'>
+        <view class='leibie'>
+          <image src='/images/sort/face.png'></image>
+          <view class='centertext'>人脸识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/car.jpg'></image>
+          <view class='centertext'>车辆识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/zhiwen.jpg'></image>
+          <view class='centertext'>指纹识别</view>
+        </view>
+       <view class='leibie'>
+          <image src='/images/sort/hand.jpg'></image>
+          <view class='centertext'>手势识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/stuff.jpg'></image>
+          <view class='centertext'>物体标记</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/more.png'></image>
+          <view class='centertext'>其他</view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class='sort2'>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>上海方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>湖南方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>广东方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>浙江方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>东北方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/speak.jpg'></image>
+          <view class='centertext'>四川方言</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/more.png'></image>
+          <view class='centertext'>其他</view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='sort2'>
+        <view class='leibie'>
+          <image src='/images/sort/car.jpg'></image>
+          <view class='centertext'>车辆识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/walk.jpg'></image>
+          <view class='centertext'>步态识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/more.png'></image>
+          <view class='centertext'>其他</view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='sort2'>
+        <view class='leibie'>
+          <image src='/images/sort/gene.jpg'></image>
+          <view class='centertext'>基因表达数据识别</view>
+        </view>
+        <view class='leibie'>
+          <image src='/images/sort/earthquake.jpg'></image>
+          <view class='centertext'>地震探测数据识别</view>
+        </view>   
+        <view class='leibie'>
+            <image src='/images/sort/more.png'></image>
+            <view class='centertext'>其他</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>  
+</view>

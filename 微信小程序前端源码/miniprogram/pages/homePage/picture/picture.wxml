@@ -1,0 +1,42 @@
+<!--pages/homePage/picture/picture.wxml-->
+<view class='content'>
+  <view class='bg'>
+    <view class='name'>AI 数据市场</view>
+    <view class='search'>
+      <view><image src='/images/search.png' style='width:14px;height:14px;'></image></view>
+      <view><input type='text' placeholder='搜你想要的'/></view>
+    </view>
+  </view>
+</view>
+<view class="item" bindtap="viewDetail">
+  <block wx:for="{{data.taskList}}" wx:if="{{item.task_onelevel_type__data_type_name=='图片'}}"  wx:for-item="item" wx:key="index">
+    <view class='tasks'  bindtap='seedetail' data-index='{{index}}' data-data='{{data}}'>
+      <view class='taskImage'>
+        <image wx:if="{{item.task_onelevel_type__data_type_name == '音频'}}" src='/images/sort/speak.jpg' ></image>
+        <image wx:elif="{{item.task_onelevel_type__data_type_name == '视频'}}" src='/images/sort/video.jpg' ></image>
+        <image wx:elif="{{item.task_onelevel_type__data_type_name == '图片'}}" src='/images/sort/picture.jpg' ></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>{{item.task_tag}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>发起者：</text>
+          <text class='id'>{{item.task_owner__username}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>截止时间：</text>
+          <text class='rating'>{{item.task_deadline}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>数据需求量：</text>
+          <text class='rating'>{{item.task_data_num}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>悬赏积分：</text>
+          <text class='rating'>{{item.task_credits}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

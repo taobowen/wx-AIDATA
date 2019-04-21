@@ -1,0 +1,38 @@
+<view class='item'>
+  <button class='order' open-type='getUserInfo' type='defalt' bindtap=''>
+    官方通知
+  </button>
+  <view class='detail2'>
+    <image src='/images/in.jpg' style='width:25px;height:25px;'></image>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='item'>
+  <button class='order' open-type='getUserInfo' type='defalt' bindtap=''>
+    购买通知
+  </button>
+  <view class='detail2'>
+    <image src='/images/in.jpg' style='width:25px;height:25px;'></image>
+  </view>
+</view>
+<view class='hr'></view>
+<view class='item'>
+  <button class='order' open-type='getUserInfo' type='defalt' bindtap=''>
+    评论和@
+  </button>
+  <view class='detail2'>
+    <image src='/images/in.jpg' style='width:25px;height:25px;'></image>
+  </view>
+</view>
+<view class='xian'></view>
+<view class='item'>
+  <button class='order' open-type='getUserInfo' type='defalt' bindtap=''>
+    关注我的
+  </button>
+  <view class='detail2'>
+    <image src='/images/in.jpg' style='width:25px;height:25px;'></image>
+  </view>
+</view>
+<view class='xian'></view>
+
+

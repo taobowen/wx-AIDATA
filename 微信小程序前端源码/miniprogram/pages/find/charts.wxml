@@ -1,0 +1,40 @@
+<view class='swiper_con'>
+      <scroll-view class='scroll-view_H' style="height:{{scrollHeight}}px;" scroll-y="true">
+        <view class='tablecontent'>
+          <view class='head'>
+            <view class='desc'>
+              排名
+            </view>
+            <view class='desc'>
+              用户名
+            </view>
+            <view class='desc' style='border:0px;'>
+              积分
+            </view>
+          </view>
+          <view class='row'>
+            <view class='block'><image src='/images/find/first.jpg' style='width:50px;height:50px;'></image></view>
+              <view class="userinfo" style='justify-content: center; width: 33%; height:50px; '>
+                <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+                <open-data class="userinfo-nickname" type='userNickName'></open-data>
+              </view>
+            <view class='block'>150</view>
+          </view>
+          <view class='row'>
+            <view class='block'><image src='/images/find/second.jpg' style='width:50px;height:50px;'></image></view>
+            <view class='block'>方梦洁</view>
+            <view class='block'>100</view>
+          </view>
+          <view class='row'>
+            <view class='block'><image src='/images/find/third.jpg' style='width:50px;height:50px;'></image></view>
+            <view class='block'>付靖文</view>
+            <view class='block'>80</view>
+          </view>
+          <view class='row'>
+            <view class='block'>4</view>
+            <view class='block'>陶博闻</view>
+            <view class='block'>50</view>
+          </view>
+        </view>
+      </scroll-view>   
+</view>

@@ -1,0 +1,67 @@
+/* pages/find/seenews/seenews.wxss */
+.content{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+}
+.content text{
+  font-size: 17px;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  /* display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  text-overflow:ellipsis; */
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 60px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.headIcon{
+  margin: 10px;
+}
+.headIcon image{
+  border-radius: 50%;
+  margin: auto;
+}
+.userinfo {
+  line-height: 60px;
+  height: 100rpx;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.userinfo-avatar {
+  overflow:hidden;  
+  width: 50rpx;  
+  height: 50rpx;    
+  border-radius: 50%;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #000000;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+}
+

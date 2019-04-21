@@ -1,0 +1,43 @@
+<!--pages/useCenter/uploaddata/detail2/senddata/senddata.wxml-->
+<!--pages/useCenter/releasetask/releasetask.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='top'>
+    <view>
+      <button class='cancel'  plain='true' bindtap=''>取消</button>
+    </view>
+    <view>
+      <button class='publish' plain='true' bindtap=''>提交</button>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>点击上传图片</view>
+      <view class='region' bindtap='addpicture'>
+        <block wx:if="{{pictureurl==''}}">
+          <view style='margin-top:20px;'>
+            <image src='/images/addpicture.jpg' style='width:57px;height:47px;'></image>
+          </view>
+        </block>
+        <block wx:else>
+          <view style='margin-top:20px;'>
+            <image src='/images/addpicture.jpg' style='width:57px;height:47px;'></image>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='xian'></view>
+    <view class='title'>上传数据</view>
+    <view class='region' bindtap='uploadFile'>
+      <block wx:if="{{exampleurl==''}}">
+        <view style='margin-top:20px;'>
+          <image src='/images/collection.png' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='selectexample'>
+          <image src='/images/collection.png' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+</form>

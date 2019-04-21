@@ -1,0 +1,93 @@
+<!--pages/useCenter/releasetask/releasetask.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='top'>
+    <view>
+      <button class='cancel'  plain='true' form-type="reset">取消</button>
+    </view>
+    <view>
+      <button class='publish' plain='true' form-type='submit'>提交</button>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>添加描述图片</view>
+      <view class='region' bindtap='addpicture'>
+        <block wx:if="{{pictureurl==''}}">
+          <view style='margin-top:20px;'>
+            <image src='/images/addpicture.jpg' style='width:57px;height:47px;'></image>
+          </view>
+        </block>
+        <block wx:else>
+          <!-- <view style='margin-top:20px;'>
+            <image src="{{tempFilePaths[0]}}" style='width:57px;height:47px;'></image>
+          </view> -->
+          <view style='margin-top:20px;'>
+            <image src='{{pictureurl}}' style='width:57px;height:47px;'></image>
+          </view> 
+        </block>
+      </view>
+    </view>
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>任务名称</view>
+      <input class='taskname' name="task_tag" placeholder='如：方言数据采集'></input>
+    </view>
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>需要的数据量</view>
+      <input class='datasize' name="task_data_num" placeholder='请输入数字'></input>
+    </view>
+    <view class='xian'></view>
+     <view class='item'>
+      <view class='title'>悬赏积分</view>
+      <input class='datasize' name="task_credits" placeholder='请输入数字'></input>
+    </view>
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>数据类型</view>
+      <view class='choose'>
+        <picker
+          mode="multiSelector"
+          name="datatype"
+          bindchange="bindMultiPickerChange1"
+          bindcolumnchange="bindMultiPickerColumnChange2"
+          value="{{multiIndex1}}"
+          range="{{multiArray1}}"
+        >
+          <view class="picker">
+           {{ my_DATA_TYPE[multiIndex1[0]]['name']}},{{my_DATA_TYPE[multiIndex1[0]]['twoLtype'][multiIndex1[1]]['name']}}
+            <!-- {{multiArray1[0][multiIndex1[0]]}}，{{multiArray1[1][multiIndex1[1]]}} -->
+          </view>
+        </picker>
+      </view>
+    </view> 
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>任务时限</view>
+      <view class='choose'>
+        <picker class='time-picker' name="task_deadline" mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}"><view class='picker'>{{startDate}}</view></picker>
+      </view>
+    </view>
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>任务简介及要求</view>
+      <textarea class='taskdescribe' name="task_description" placeholder='如：搜集付靖文打LOL被一血的截图，要求：死的够惨、菜的够真实、操作够麻瓜' height:200px; />
+    </view>
+    <view class='xian'></view>
+    <view class='item'>
+      <view class='title'>上传数据示例</view>
+    </view>
+    <view class='region' bindtap='uploadFile'>
+      <block wx:if="{{exampleurl==''}}">
+        <view style='margin-top:20px;'>
+          <image src='/images/collection.png' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='selectexample'>
+          <image src='/images/collection.png' style='width:57px;height:47px;'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+</form>

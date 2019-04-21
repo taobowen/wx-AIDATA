@@ -1,0 +1,44 @@
+<!--pages/useCenter/uploaddata/detail2/detail2.wxml-->
+<view class="tasks">
+  <view class="taskImage">
+    <image src="/images/else.jpg"></image>
+  </view>
+  <view class="task-info">
+    <view>
+      <text class="task-title">人体行为数据采集(生活照)</text>
+    </view>
+    <view>
+        <text class="label">难度：</text>
+        <text class="rating">2.0</text>
+    </view>
+    <view>
+      <text class="label">发布者：</text>
+      <text class="id">用户2</text>
+    </view>
+    <view>
+      <text class="label">类型：</text>
+      <text class="id">图片</text>
+    </view>
+  </view>
+</view>
+<view class='xian'></view>
+<!--任务简介及要求-->
+<view class="summary">
+  <text class="title">任务简介及要求</text>
+  <view class="content">
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;采集人体行为图片数据，包含自拍照，游客照等。支持场景、人物及人物动作定制化采集。</text>
+  </view>
+  <view class='xian'></view>
+  <text class='title'>数据样例</text>
+  <view></view>
+  <view class='xian'></view>
+  <view class='item'>
+    <button style='width:20%;padding:5px;font-size:15px;' bindtap=''>
+      查看评论
+    </button>
+    <button style='width:20%;padding:5px;font-size:15px;' bindtap='senddata'>
+      提交数据
+    </button>
+  </view>
+</view>
+

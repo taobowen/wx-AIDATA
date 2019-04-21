@@ -1,0 +1,17 @@
+<!--pages/useCenter/money/money.wxml-->
+<view class='top'>
+    <view class='statement'>
+      积分
+    </view>
+    <view>
+      <button class='publish' plain='true' form-type='submit'  bindtap=''>明细</button>
+    </view>
+</view>
+<view class='content'>
+  <view class='score'>
+    <view><image src='/images/score.jpg' style='height:50px;width:50px;'></image></view>
+    <view>100.0</view>
+  </view>
+  <view class='detail'>积分在交易时可以使用，可随时充值</view>
+  <button>充值</button>
+</view>

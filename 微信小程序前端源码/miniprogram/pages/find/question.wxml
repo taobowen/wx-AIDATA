@@ -1,0 +1,89 @@
+<view class='swiper_con'>  
+  <scroll-view class='scroll-view_H' style="height:{{scrollHeight}}px;" scroll-y="true">
+    <button class='addquestion' bindtap='addquestion'><image src='/images/find/addquestion.png'></image></button>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        中国AI发展还有哪些问题？
+      </view>
+      <view class='information'>
+        2小时前·15回答
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        怎么通过路口视频处理基于车道的车流量信息
+      </view>
+      <view class='information'>
+        8小时前·9回答
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        当前无人车的应用前景怎么样？
+      </view>
+      <view class='information'>
+        9小时前·22回答
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        怎么看待人脸支付系统？
+      </view>
+      <view class='information'>
+        1天前·8回答
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        目前语音识别能达到什么水准？
+      </view>
+      <view class='information'>
+        1天前·3回答
+      </view>
+    </view>
+    <view class='item'>
+      <view class='head'>
+        <view class="userinfo" style='justify-content: center;'>
+            <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+            <open-data class="userinfo-nickname" type='userNickName'></open-data>
+        </view>
+      </view>
+      <view class='question'>
+        深度学习的哪个方向比较热门？
+      </view>
+      <view class='information'>
+        1天前·9回答
+      </view>
+    </view>
+  </scroll-view>
+</view>  

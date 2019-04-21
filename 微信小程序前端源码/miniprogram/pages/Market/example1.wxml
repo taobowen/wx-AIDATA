@@ -1,0 +1,192 @@
+<!-- <view class='item'>
+  <block wx:for="{{data.taskList}}" wx:for-item="item" wx:key="index">
+    <view class='tasks' bindtap='seedetail' data-index='{{index}}' data-data='{{data}}'>
+      <view class='taskImage'>
+        <image src='/images/example1/4.png' ></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>{{item.task_tag}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>{{item.task_owner}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>{{item.task_data_num}}</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.0</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>   -->
+
+<view class="item" bindtap="viewDetail">
+  <scroll-view style='height:{{scrollHeight}}px;' scroll-y="true" class='container' bindscroll="scroll">
+    <view class='tasks' bindtap='seedetail' data-index='{{index}}' data-data='{{data}}'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>数据类型：</text>
+          <text class='rating'>视频-车辆识别</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>  
+     <view class='tasks'>
+      <view class='taskImage'>
+        <image src='/images/example1/1.jpg'></image>
+      </view>
+      <view class='task-info'>
+        <view>
+          <text class='task-title'>车辆数据</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>收集者：</text>
+          <text class='id'>用户2</text>
+        </view>
+         <view class='task-rating'>
+          <text class='lable'>数据量：</text>
+          <text class='rating'>2563</text>
+        </view>
+        <view class='task-rating'>
+          <text class='lable'>评分：</text>
+          <text class='rating'>4.3</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+
+</view>
+
