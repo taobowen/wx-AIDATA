@@ -1,0 +1,3 @@
+[submodule "微信小程序后端源码/AI_WX"]
+	path = 微信小程序后端源码/AI_WX
+	url = https://github.com/whllhw/AI_WX.git
