@@ -1,13 +1,12 @@
 # wx-AIDATA
-## 微信小程序_AI数据管理系统
-### 简介：
-本项目为中国大学生服务外包大赛——A16选题作品，旨在为AI数据收集者和对AI数据有很大需求的人提供一个AI数据管理平台，内容主要分为四大板块
-- 任务系统
-通过数据需求方发布任务，提供任务信息（如截止时间，数据量，数据类型等），数据样例，数据描述，任务赏金等等，其他用户通过名称搜索，任务类型搜索等方式找到自己想要的任务，接受任务后在截止时间之前把数据上传到小程序中，通过人工审核和自动审核的方式检查上传的数据，确认无误后获得赏金。
-- 数据市场系统
-    数据采集方通过给自己手头上的数据添加类型、描述、数据量等信息后上传到市场中，数据需求方可以选择支付相应赏金来购买自己需要的数据
-- 发现系统
-    该板块为小程序的扩展板块，暂时包括达人问答、最热资讯、积分排行榜三大部分
-- 用户中心
-    包括用户的所有和小程序有关的信息和功能，如：收藏的任务、发布的任务、接受的任务、充值中心等
-    
+## WeChat applet_AI data management system
+### Introduction:
+This project is a selection of the China University Student Service Outsourcing Competition-A16, which aims to provide an AI data management platform for AI data collectors and people who have a great demand for AI data. The content is mainly divided into four major sections
+- Task system
+The data demander publishes tasks, provides task information (such as deadline, data volume, data type, etc.), data samples, data description, task bounty, etc., and other users can find the tasks they want by searching by name, task type, etc. After accepting the task, upload the data to the applet before the deadline, check the uploaded data through manual review and automatic review, and get the bounty after confirming that it is correct.
+- Data Market System
+Data collectors upload their data to the market by adding information such as type, description, and data volume. Data demanders can choose to pay the corresponding reward to purchase the data they need
+- Discovery System
+This section is an extension of the mini program, temporarily including three parts: expert Q&A, hottest information, and score rankings
+- User Center
+Includes all user information and functions related to the mini program, such as: favorite tasks, published tasks, accepted tasks, recharge center, etc.
